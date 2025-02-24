@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="https://kit.fontawesome.com/fbfbf994f5.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+    
+        }
+        .el1{
+            padding: 1% 25%;
+            background-color:white;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+       nav{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        padding-left: 50px;
+        gap: 20px;
+       
+       }
+       a{
+        text-decoration: none;
+        color:black;
+        margin: 10px;
+    
+       }
+       input{
+        width: 10%;
+        height: 5%;
+       }
+       @media screen and (width<768){
+        .el3{
+            grid-template-columns: auto auto;
+        }
+        }
+
+        
+       
+       .el2{
+        padding:2% 5%;
+        background-color:rgba(239, 241, 241, 0.845);
+        display: flex;
+       }
+       .ela{
+        flex-basis:50% ;
+        padding: 0%;
+        font-size: 20px;
+        padding-top:15% ;
+    
+       }
+       .ela>p{
+        padding:10% ;
+        padding-left: 5px;
+       }
+       button{
+        background-color: red;
+        width: 30%;
+        height: 10%;
+        cursor: pointer;
+        border-style: none;
+       }
+       .elb{
+        flex-basis:50% ;
+       }
+       button:hover{
+        color: white;
+       }
+       .el3{
+        display: flex;
+        justify-content: space-between;
+        font-size: 70%;
+        color: lightslategrey;
+        padding: 90px;
+       }
+       .el4{
+        display: flex;
+        font-size: 30px;
+       }
+       .elc{
+        flex-basis: 50%;
+        background-color:rgba(239, 241, 241, 0.845) ;
+        padding:0%;
+        padding-top: 15%;
+        padding-left: 10%;
+       }
+       .eld{
+        flex-basis: 50%;
+        padding-left: 1%;
+       }
+       .el5{
+        padding: 5%;
+       }
+       .el5>.elf{
+        padding-left: 10% ;
+        padding-top: 5%;
+        
+
+       }
+       .elg{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+       }
+       .elg{
+        padding: 0%;
+        padding-top: 5%;
+    
+       }
+       .el6{
+        background-color:white;
+        display: flex;
+       }
+    
+       
+       .elh{
+        flex-basis: 35%;
+       }
+       .eli{
+        flex-basis: 30%;
+        padding-top: 10%;
+        font-size: 20px;
+        padding-left: 4%;
+        font-style:italic;
+        
+       }
+       .elj{
+        flex-basis: 35%;
+       }
+       .el8{
+        display: flex;
+       }
+       .ell{
+        flex-basis: 50%;
+       }
+       .elm{
+        flex-basis: 50%;
+        background-color: rgba(239, 241, 241, 0.845);
+        padding-top: 15%;
+        padding-left: 15%;
+        font-size: 30px;
+       }
+       .el9{
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        gap: 20px;
+        padding-top: 50px;
+        padding: 10%;
+       }
+       .el10{
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        gap: 20px;
+        padding-top:30px;
+        padding: 10%;
+        padding-bottom: 20%;
+       }
+       .child1{
+        padding-left: 10%;
+        padding-top: 5%;
+       }
+       @media screen and(width<576) {
+        .el9{
+            grid-template-columns: auto;
+        }
+        
+       }
+       .el11{
+        padding-left: 30%;
+        padding-top: 10%;
+        font-style: oblique;
+        font-size: 40px;
+        background-image: url(kohli.png);
+        height: 100vh;
+        color: white;
+       }
+       
+       .el10,.el9:hover{
+            transform: scale(1.1);
+            transition: 1.8s;
+       
+    }
+    .el9:hover{
+            transform: scale(1.1);
+            transition: 1.8s;
+    }
+
+   
+    .child3{
+        display: flex;
+        gap:20px;
+        box-shadow: 0 2px 5px white;
+    }
+     .container{
+        padding: 30px;
+        justify-items: center;
+     }
+     .container1{
+        display:flex;
+        padding: 40px;
+        padding-left: 10%;
+     }
+    .child4{
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px 0px;
+        height: 60%;
+        width: 40%;
+    }
+    .child4:hover{
+        color: red;
+        background-color: red;
+    }
+    .child6:hover{
+        color:red;
+    background-color: red;
+    }
+    .child5{
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px 0px ;
+        height: 50vh;
+        width: 60%;
+    
+        font-size: 20px;
+        padding-left: 50px;
+        padding-top: 30px;
+        padding-right: 50px;
+    }
+    .container2{
+        display:flex;
+        padding: 40px;
+        padding-left: 10%;
+    }
+    .child6{
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px 0px;
+        height: 60%;
+        width: 40%;
+    }
+    .el13{
+        display: flex;
+        background-color:gray;
+        color: white;
+    }
+    .child7,.child8,.child9,.child10{
+        flex-basis:20% ;
+        padding: 50px;
+        padding-top: 10%;
+        padding-left: 100px;
+        
+    }
+    .child7{
+        padding: 5%;
+        padding-top: 5%;
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+    i{
+        padding: 5px;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    footer{
+        text-align: center;
+        background-color: gray;
+    }
+    @media screen and (width<576){
+
+    }
+    .el1>h1{
+        text-align: center;
+    }
+    .elk,.ele{
+        text-align:center
+    }
+    @media screen and (max-width: 768px) {
+    .el1 {
+        padding: 1% 10%;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ela, .elb {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
+    .el3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .el4 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .eld img {
+        width: 100%;
+        height: auto;
+    }
+
+    .el9, .el10 {
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .el9, .el10 {
+        grid-template-columns: 1fr;
+        padding: 5%;
+    }
+
+    .el6 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .eli {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .elg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 50%;
+    }
+}
+        
+    
+    </style>
+</head>
+<body>
+
+    <div class="el1">
+    
+    <h1 style="color: lightcoral;" >Jevelin </h1>
+    
+
+    <nav >
+        <a href="#" style="color: black;">Home</a>
+        <a href="women.html">women</a>
+        <a href="men.html">men</a>
+         <a href="shoes.html">shoes</a>
+         <a href="magazine.html">Magazine</a>
+
+         <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input type="text" value="search" width="100px">
+        <br>
+        <i class="fa-solid fa-cart-shopping"></i>
+
+    
+       
+    </nav>
+    </div>
+
+    <div class="el2">
+        <div class="ela">
+        <h1>New,Amazing <br>
+            Stuff is Here
+        </h1>
+        <p>Shop today and get <b>20% discount</b></p>
+        <a href="women.html"><button >shop Now</button></a>
+        </div>
+        <div class="elb">
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/revslider/startup_slaider/5559331632_2_3_1.png"  width="100%" height="90%"alt="">
+        
+        </div>
+
+    </div>
+    <div class="el3">
+        <div>
+           
+        <h1> <i class="fa-solid fa-van-shuttle"></i>NEXT DAY SHIPPING</h1><br>
+        <p>Lorem ipsum dolor sit amet, consectetur</p><br>
+        <p>elit. Nulla sem libero, dignissim sit amet consequa</p>
+    </div>
+    <div>
+       
+        <h1><i class="fa-solid fa-paperclip"></i>FREE 20 DAY RETURNS</h1><br>
+        <p>Lorem ipsum dolor sit amet, consectetur</p><br>
+        <p>elit. Nulla sem libero, dignissim sit amet consequa</p>
+
+    </div>
+    <div>
+    
+        <h1><i class="fa-solid fa-lock"></i>SECURE CHECKOUT </h1><br>
+        <p>Lorem ipsum dolor sit amet, consectetur</p><br>
+        <p>elit. Nulla sem libero, dignissim sit amet consequa</p>
+    </div>
+    </div>
+
+</div>
+    <div class="el4">
+        <div class="elc">
+            <h1>This Season</h1>
+            <br>
+            <p>BE READY TO CHANGE</p>
+            <br>
+          <a href="women.html"><button>shop women</button></a>  
+        </div>
+        <div class="eld">
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/1.jpg"width="100%"height="100%" alt="">
+        </div>
+    </div>
+    <div class="el5">
+        
+        <div class="ele">
+            <h1>New arrivals</h1>
+            <br>
+            <p>DENIM DREAMS</p>
+
+        </div>
+    
+        <div class="elf">
+           <a href="women.html"><img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5391345406_2_1_1-1.jpg" width="30%"height="310px" alt=""></a>
+        
+       <a href="shoes.html"> <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/1512311009_2_2_1-1-660x660.jpg" width="30%" height="30%" alt=""></a>
+       <a href="#"> <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/9711314406_2_4_1-1-660x660.jpg" width="30%" height="30%" alt=""></a>
+        </div>
+        
+        <div class="elg">
+           <ul> <p>Striped denim dress</p><br>
+            <p>DRESS</p><br>
+        <p>£34.00 £19.99</p></ul>
+            <ul><P>Scarf tie-up wedges</P><br>
+            <p>SHOES</p><br>
+        <p>£39.99</p></ul>
+           <ul> <P>Oversized denim jacket</P><br>
+            <p>JACKET</p><br>
+        <p>£25.99</p>
+    </ul>
+        </div>
+    </div>
+  <div class="el6">
+    <div class="elh">
+        <img src="https://img.freepik.com/premium-photo/happy-young-woman-carry-shopping-bags_93675-7379.jpg?ga=GA1.1.1483660904.1739252401&semt=ais_hybrid" alt="" width="100%" height="100%">
+    </div>
+    <div class="eli">
+        <h1>Khaki Lace Up Sandals</h1>
+        <br>
+        <p>THIS MONTHS ITEM ON MEGA SALE</p>
+        <br>
+        <h1>00  00   00    00   00</h1>
+        <h5>week/ days/ hours/ minutes/ seconds</h5>
+        <br>
+        <button>Grab it til you can</button>
+    </div>
+    <div class="elj">
+        <img src="https://img.freepik.com/free-photo/luxury-shopping-with-beautiful-woman_329181-442.jpg?ga=GA1.1.1483660904.1739252401&semt=ais_hybrid" alt="" width="100%" height="100% ">
+    </div>
+    
+    </div>
+    <div class="el7">
+        
+        <div class="elk" >
+<h1 >New arrivals</h1>
+<br>
+<p>MENS JACKETS</p>
+        </div>
+        
+    </div>
+
+        <div class="el8">
+        <div class="ell">
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/Layer-512.jpg" alt="" width="100%" height="100%">
+        </div>
+
+    <div class="elm">
+        <h2>Experience World</h2><br>
+        <p>
+            IN NEW LOOK
+            </p><br>
+          <a href="men.html"><button>Shop Men</button></a>
+
+    </div>
+    </div> 
+    <div class="child1">
+        <p>TRENDING NOW</p>
+    </div>
+    <div class="el9">
+        
+        <div >
+            
+            
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5593559500_2_5_1.jpg" alt="" width="90%" height="70%">
+       <p>Striped swetshirt</p><br>
+       <p>SWETSHIRT</p><br><hr><i class="fa-solid fa-cart-shopping"></i>
+       <h3>£42.00</h3>
+        </div>
+        <div>
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5713501400_2_5_1.jpg" alt="" width="90%" height="70%">
+        <p>Denim vest</p><br>
+        <p>JACKET</p><br><hr><i class="fa-solid fa-cart-shopping"></i>
+        <h3>£32.00</h3>
+        </div>
+        <div>
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5711515833_2_1_1.jpg" alt="" width="90%" height="70%">
+            <p>Denim truker jacket</p><br>
+            <p>JACKET</p><br><hr><i class="fa-solid fa-cart-shopping"></i>
+            <h3>£58.00</h3>
+
+        </div>
+        <div>
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5688547800_2_1_1.jpg" alt="" width="90%" height="70%">
+            <p>Sports Jacket</p><br>
+            <p>JACKET</p><br><hr><i class="fa-solid fa-cart-shopping"></i>
+            <h3>£38.00</h3>
+        </div>
+        <div>
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5680505811_2_1_1.jpg" alt="" width="90%" height="70%">
+            <p>Checked Tailored Trousers</p><br>
+            <p>PANTS</p><br><hr><i class="fa-solid fa-cart-shopping"></i>
+            <h3>£34.00</h3>
+        </div>
+    </div>
+    <div class="el10">
+        <div>
+            
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5559315711_2_5_1.jpg" alt="" width="90%" height="70%">
+       <p>Striped swetshirt</p><br>
+       <p>SWETSHIRT</p><br><hr><i class="fa-solid fa-cart-shopping"></i>
+       <h3>£42.00</h3>
+        </div>
+        <div>
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5559325500_2_5_1.jpg" alt="" width="90%" height="70%">
+        <p>Denim vest</p><br>
+        <p>JACKET</p><br><hr><i class="fa-solid fa-cart-shopping"></i>
+        <h3>£32.00</h3>
+        </div>
+        <div>
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/9393313800_2_4_1-660x660.jpg" alt="" width="90%" height="70%">
+            <p>Denim truker jacket</p><br>
+            <p>JACKET</p><br><hr><i class="fa-solid fa-cart-shopping"></i>
+            <h3>£58.00</h3>
+
+        </div>
+        <div>
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5559331632_2_5_1-660x660.jpg" alt="" width="90%" height="70%">
+            <p>Sports Jacket</p><br>
+            <p>JACKET</p><br><hr><i class="fa-solid fa-cart-shopping"></i>
+            <h3>£38.00</h3>
+        </div>
+        <div>
+            <img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5393319800_2_4_1-660x660.jpg" alt="" width="90%" height="70%">
+            <p>Checked Tailored Trousers</p><br>
+            <p>PANTS</p><br><hr><i class="fa-solid fa-cart-shopping"></i>
+            <h3>£34.00</h3>
+        </div>
+    </div>
+    <div class="el11">
+        
+            <p>Subscribe And Get 10% Off</p>
+            <br>
+            <p>OUR NEW COLLECTION</p><br>
+            <input type="email" value="Enter your email" width="50px" height="100px"><br>
+            <br>
+            <a href=""><button>SUBSCRIBE</button></a>
+        
+    </div>
+    <div class="container">
+        
+
+    <a href="#"><h1>Our Megazine</h1></a>
+    <p>READ OUR STORIES</p>
+    
+    
+    </div>
+    
+    <div class="container1">
+    <div class="child4">
+    
+
+        <img src="https://thumbs.dreamstime.com/b/window-shopping-women-two-pretty-windows-down-town-city-36580450.jpg" alt="" width="100%" height="100%">
+    
+</div>
+<div class="child5" >
+        <p>by shufflehound August 23, 2018</p>
+        <br>
+        <h1>Summer Hit</h1><br>
+        <p>Aliquam ornare mauris quis sapien interdum euismod. Nullam a elementum odio. Vivamus vestibulum bibendum orci, eget ultricies mi luctus et. Nulla fermentum, leo ac...</p>
+    </div>
+</div>
+    <div class="container2">
+    <div class="child5">
+        <p>by shufflehound August 23, 2018</p><br>
+        <h1>Leather Trends</h1><br>
+        <p>Aliquam euismod, quam in convallis pulvinar, magna ipsum gravida leo, eu fermentum urna urna et nisi. Etiam condimentum porttitor sem, a posuere dolor porttitor...</p>
+    </div>
+    <div class="child6">
+        <img src="https://media.gettyimages.com/id/1279138744/photo/happy-male-customer-looking-away-while-buying-shoe-at-retail-store.jpg?s=612x612&w=0&k=20&c=V7kxbpbE1nNV3V897DhDT5K2QtSkCybhZe8-TdU9YFM=" alt="" width="100%" height="100%">
+    </div>
+    </div>
+    <div class="el13">
+        <div class="child7">
+            <p>FOLLOW US</p>
+            <br>
+            <br>
+            <br>
+            <p>PAYMENT METHOD</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p><br> 
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-paypal"></i>
+            <i class="fa-brands fa-cc-jcb"></i>
+
+
+        </div>
+        <div class="child8">
+            <p>PAYMENT METHOD</p>
+            <br>
+       <a href="men.html"><img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5711515833_2_1_1-1024x1308.jpg" alt="" width="50px" height="50px">
+       <h6>Denim Trucker Jacket
+        £58.00</h6>
+        </a>
+        <br>
+        <a href="women.html"><img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5391345406_2_1_1-1-1024x1308.jpg" alt="" width="50px" height="50px">
+            <h6>Striped denim dress
+                £34.00 £19.99</h6>
+        </a>
+        <br>
+        <a href="men.html"><img src="https://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/5713501400_2_5_1-1024x1308.jpg" alt="" width="50px" height="50px">
+            <h6>Denim Vest
+                £32.00
+                </h6>
+        </a>
+        </div>
+        <div class="child9">
+            <p>SHOPPING GUIDE</p>
+       <a href="index.html"><p>FAQ<br>
+        <br>
+                Shipment<br>
+                <br>
+                Returns<br>
+                <br>
+                Policies<br>
+                <br>
+                Gift cards<br>
+                <br>
+                Clothing care<br>
+                <br>
+                Purchase conditions</p>
+                </a>
+        </div>
+        <div class="child10">
+            <p>COMPANY</p>
+          <a href="index.html"><p>About us<br>
+            <br>
+                Press<br>
+                <br>
+                Our team<br>
+                <br>
+                Offices<br>
+                <br>
+                Affiliates<br>
+                <br>
+                Giveaway<br>
+                <br>
+                Contact</p>
+                </a>
+                <br>
+                
+        </div>
+    
+    </div>
+    <footer>
+        <p>Copyright © 2018 JevelinTheme - Theme by Shufflehound</p>
+    </footer>
+   
+</body>
+</html>
